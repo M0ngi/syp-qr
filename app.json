@@ -1,0 +1,63 @@
+{
+  "expo": {
+    "name": "SYP Staff",
+    "slug": "SYP-staff",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFF4F4"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ieee.staff.syp",
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "config": {
+        "googleSignIn": {
+          "reservedClientId": "com.googleusercontent.apps.640548717558-dhdt10vs2tjqcs9338pk3gf06kmmgmsd"
+        }
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#FFF4F4"
+      },
+      "package": "com.ieee.staff.syp",
+      "googleServicesFile": "./google-services.json",
+      "softwareKeyboardLayoutMode": "pan",
+      "versionCode": 3
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.png",
+      "config": {
+        "firebase": {
+          "apiKey": "AIzaSyDX8JG_kPw0oR41PE6Q_J2NW3qJMvuaNcY",
+          "authDomain": "r8syp-8062b.firebaseapp.com",
+          "projectId": "r8syp-8062b",
+          "storageBucket": "r8syp-8062b.appspot.com",
+          "messagingSenderId": "640548717558",
+          "appId": "1:640548717558:web:bc66e02d1e7731cdb47dd7",
+          "measurementId": "G-2RF8G89EW8"
+        }
+      }
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/icon.png",
+          "color": "#FFF8F1"
+        }
+      ]
+    ]
+  }
+}
