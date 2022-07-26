@@ -89,7 +89,7 @@ export default function QRVerifierScreen() {
             </View>
         }
         {
-            idInputValue.length == 8 && !idCheckResult && <View>
+            idInputValue.length == 8 && !idCheckResult && <View style={styles.addParticipantButton}>
                 <Pressable onPress={()=>{
                     addParticipant(workshop_id, idInputValue).then((id)=>{
                         setParticipantsList([...participantsList, id])
@@ -106,6 +106,7 @@ export default function QRVerifierScreen() {
 
 const styles = StyleSheet.create({
     container: {
+        backgroundColor: Colors["backgroundColor"],
         display: "flex",
         width: Layout.window.width,
         height: Layout.window.height,
@@ -170,5 +171,8 @@ const styles = StyleSheet.create({
     },
     resultsText: {
         marginLeft: 20
+    },
+    addParticipantButton: {
+        backgroundColor: Colors["backgroundColor"]
     },
 });

@@ -85,6 +85,7 @@ export default function AddParticipantScreen() {
 
 const styles = StyleSheet.create({
     container: {
+        backgroundColor: Colors["backgroundColor"],
         display: "flex",
         width: Layout.window.width,
         height: Layout.window.height,
